@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fecd55;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.L-text {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.S-text {
+  font-size: 1.5rem;
+}
+
+#dm {
+  position: relative;
+  display: inline-block;
+}
+
+#dm::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 3px;
+  height: 90%;
+  background-color: black;
+}
+
+#dm.active::after {
+  display: none;
+}
